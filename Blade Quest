@@ -1,0 +1,14 @@
+getgenv().BladeQuestAutofarm = {
+    Enabled = true;
+    Map = "Carnival";
+    Difficulty = "Easy";
+    Hardcore = true;
+    FailSafeRejoin = false; -- Will try to go back to lobby if Character is stuck somewhere...
+    FailSafeSeconds = 300;
+    TweenSpeed = 50; -- Higher = faster, but don't go too high or it'll teleport you to lobby
+    Offset = Vector3.new(0,5,7); -- Anticheat triggers if you go above mob; you can change the position
+    AutoUpgradePlayerSkill = ""; -- "HealthSkill", "SwordSkill", "MagicSkill" or leave empty to turn off
+    AutoMergeSwords = false;
+    AutoUpgradeSword = false;
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Blade%20Quest/BladeQuestLoadstring"))()
